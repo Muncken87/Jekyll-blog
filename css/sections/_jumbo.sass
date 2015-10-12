@@ -1,0 +1,72 @@
+.jumbo
+  background:
+    color: white
+    position: 50% 50%
+    image: url(../img/jumbo.jpg)
+    size: cover
+  position: relative
+  display: flex
+  align-items: center
+  margin-bottom: 5%
+  height: calc(100vh - 86px)
+  // justify-content: center
+
+  .overlay
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(0,0,0,0.4)
+
+  section
+    max-width: 700px
+    width: 100%
+    padding: 18px
+    color: black
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+
+
+    h1
+      font-size: 64px
+      font-weight: 400
+      letter-spacing: 2px
+      margin-bottom: 1rem
+      font-family: 'Pacifico', cursive
+      color: white
+      text-transform: none
+
+    @media(max-width: 1400px)
+      h1
+        font-size: 64px
+
+
+    @media(max-width: 767px)
+      h1
+        font-size: 44px
+
+    p
+      font-size: 20px
+      line-height: 1.4em
+      font-family: 'BrandonText-Regular'
+      color: white
+
+    @media(max-width: 450px)
+      p
+        display: none
+
+  .geomicon
+    height: 40px
+    width: 40px
+    position: absolute
+    top: 75%
+    left: 50%
+    transform: translate(-75%, -50%)
+    cursor: pointer
+
+    path
+      fill: white

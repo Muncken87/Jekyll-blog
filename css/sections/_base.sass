@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico)
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700)
+
+
+@font-face
+  font-family: BrandonText-Bold
+  src: url(../fonts/BrandonText-Bold.otf)
+  font-weight: bold
+
+@font-face
+  font-family: BrandonText-Regular
+  src: url(../fonts/BrandonText-Regular.otf)
+  font-weight: normal
+
+
+
+$font-reg:'BrandonText-Regular'
+$font-bd:'BrandonText-Bold'
+$primary-color: #fff
+$text-color: #999
+$text-hover: #999
+$background: #333
+$black-bg: #000
+
+body
+  background: #fff
+  font-family: $font-reg
+  font-size: 11px
+  margin: 0
+  padding: 0
+  font-weight: normal
+  overflow-x: hidden
+  transition: right 0.2s ease
+
+
+.closed
+  overflow-x: hidden
+  position: relative
+  right: 0
+
+
+.open
+  right: 50%
+
+
+
+h1,h2,h3,h4,h5,h6
+  font-family: BrandonText-Bold
+
+p,br,span,ul,li
+  font-family: BrandonText-Regular
+
+*
+  box-sizing: border-box
+
+  .clearfix
+    content: ""
+    display: table
+    height: 0
+    clear: both
+
+hr
+  height: 1px
+  display: block
+  background: #eee
+  margin: 25px 0px
+  border: none

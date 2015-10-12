@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Css 3"
+date:   2015-01-27 19:50:11
+permalink: /Css-3-Html-5
+thumbnail: ../img/home.jpg
+comments: true
+info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae bibendum nisi. Suspendisse tempus arcu vitae pretium convallis. Nullam urna enim, euismod nec ornare ut, iaculis non lacus. Cras sed dui feugiat, aliquam ligula cursus
+---
+So you’ve been trying to wrap your heads around and decide between Grunt and Gulp? Yeah, me too, been there, done that. In my case, the decision wasn’t really hard. I’ve never had strong feelings for Grunt, and for a long time, I used a custom made ANT script. I used to copy it over to every new project, and it helped me with basic tasks — moving, copying, cleaning, linting, minifying, etc. At one point, I switched over to Grunt, but my workflow essentially mimicked the one I had already created using ANT.
+
+So, when Gulp came out, I was right at the point of willing to dive deep into JS-based task runners. Plus, it quickly became the darling of a large portion of the JS community, and many projects, like Ionic, adopted it right away. So, my choice was easy.
+
+
+Yet, writing Grunt off for all the wrong reasons does not feel right. It is still a great tool, with a bustling community around it, so it makes a lot of sense to make a proper comparison between Grunt and Gulp.
+
+<h1 class="sub-header">The Differences</h1>
+
+
+
+There are two main differences between Grunt and Gulp:
+
+Grunt focuses on configuration, while Gulp focuses on code
+Grunt was built around a set of built-in, and commonly used tasks, while Gulp came around with the idea of enforcing nothing, but how community-developed micro-tasks should connect to each other
+That is not to say that Grunt does not support community extensions. Of course, Grunt has supported creating custom plugins since the beginning, and I am sure that one can find a plugin for just about anything one needs. It was just the nature of the built-in tasks that made me stick around a little longer with my ANT script. In retrospect, I have to admit that I was wrong that for being sceptical about it becoming as popular as it is today. In early 2015, Grunt still holds a larger community than Gulp, despite the latter catching up fast.
+
+Every task in Grunt is an array of different plugin configurations, that simply get executed one after another, in a strictly independent, and sequential fashion:
+
+
+In this case, ‘clean’ and ‘concat’ must be configured before the ‘build’ task is registered. Each task configuration is independent from all the rest. When dealing with IO, such as files, each task accesses the file separately — opening the file, applying the changes, and closing the file. Therefore, almost every task requires a source and destination to be specified. This not only doubles the effort for the developer, but it also makes Grunt relatively slower than Gulp.

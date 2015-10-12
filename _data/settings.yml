@@ -1,0 +1,28 @@
+title: Artists Theme
+
+navigation:
+- {name: Contact, url: 'img/work/proj-9/tools.jpg'}
+- {name: About, url: '../about'}
+- {name: Blog, url: '../blog'}
+- {name: Portfolio, url: '/'}
+
+
+
+
+work:
+- {name: Computers, url: 'img/work/proj-1/1.jpg',spec: 2014, author: Alexander Munck}
+- {name: Workspace, url: 'img/work/proj-2/web2.png'}
+- {name: Desktop, url: 'img/work/proj-3/02.png'}
+- {name: Vacation, url: 'img/work/proj-4/05.jpg'}
+- {name: Icon Mania, url: 'img/work/proj-5/icons.jpg'}
+- {name: Computers, url: 'img/work/proj-6/sit.jpg',spec: 2014, author: Alexander Munck}
+- {name: Workspace, url: 'img/work/proj-7/clothes.jpg'}
+- {name: Desktop, url: 'img/work/proj-8/books.jpg'}
+- {name: Vacation, url: 'img/work/proj-9/tools.jpg'}
+- {name: Icon Mania, url: 'img/work/proj-10/typewriter.jpg'}
+
+
+project:
+- {name: 500GB (5400-rpm) hard drive}
+- {name: TYPO International Design Talks}
+- {name: Dual-core Intel Core i5 processor (Turbo Boost up to 2.7GHz) with 3MB shared L3 cache}

@@ -1,0 +1,136 @@
+%post-header
+  color: $text-color
+  text-decoration: none
+  font-size: 36px
+  display: block
+  color: $background
+  font-family: $font-bd
+
+
+.post
+  width: 100%
+  max-width: 1100px
+  margin: 86px auto 0px auto
+
+  // Blog post Content
+
+  .post-content
+    max-width: 750px
+    margin: 0 auto
+
+    .post-title
+      +margin(20px 0px)
+      font:
+        size: 54px
+        family: $font-bd
+      color: #000
+      clear: both
+
+    p
+      font-size: 20px
+      line-height: 1.8em
+      margin-bottom: 1.6em
+      // font-family: $font-reg
+
+    img
+      height: auto
+      width: 100%
+      max-height: 350px
+
+    h1
+      font-size: 36px
+      text-transform: uppercase
+      margin-bottom: 0.3em
+      font-family: $font-bd
+
+    h2
+      font-size: 30px
+      margin-bottom: 0.3em
+      font-family: $font-bd
+      text-transform: none
+
+    .meta
+      color: #9C9A9A
+      font-size: 18px
+      display: block
+      font-family: $font-reg
+      float: left
+
+      @media(max-width: 767px)
+        float: none
+
+    .back
+      float: right
+      text-decoration: none
+      background: #ccc
+      padding: 10px 20px
+      color: white
+      border-radius: 4px
+
+      @media(max-width: 767px)
+        float: none
+
+
+
+
+  // Blog post mainview
+
+.squares
+  cursor: pointer
+  font-family: $font-bd
+  margin-bottom: 35px
+
+  .thumbnail
+    max-height: 400px
+    height: 100%
+    background-size: cover
+
+
+  .post-header
+    @extend %post-header
+    display: inline-block
+    text-transform: uppercase
+    color: #000
+
+  &:hover .post-date
+    color: #00CEFF
+
+  .post-date
+    @extend %post-header
+    display: inline-block
+    text-transform: uppercase
+    color: #D2D2D2
+    font-size: 20px
+    transition: color 0.2s ease
+
+    &::before
+      content: "/"
+      color: #eee
+      margin: 0px 10px 0px 0px
+
+.read-more
+  h2
+    margin-bottom: 50px
+    font-size: 40px
+
+  ul
+    li
+      padding-bottom: 10px
+
+      &:hover .read-more-date
+        color: #5694f1
+
+      &:hover .read-more-header
+        opacity: 0.8
+
+
+      &::after
+        content: ""
+        background: #eee
+        height: 1px
+        display: block
+        margin: 20px auto
+        border: none
+
+.publisher-anchor-color a
+  color: #55ACEE !important

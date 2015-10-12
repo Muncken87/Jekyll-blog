@@ -1,0 +1,101 @@
+.site-header
+  background: #fff
+  box-sizing: border-box
+  padding: 30px 0px
+  position: relative
+  width: 100%
+  z-index: 2
+
+
+
+  .site-nav
+    display: block
+    transition: 0.2s ease
+
+    .site-title
+      text-decoration: none
+      color: $black-bg
+      font-size: 16px
+      padding: 5px 10px
+      float: left
+
+    .navigation
+
+      a
+        text-decoration: none
+        color: $black-bg
+        margin-left: 35px
+        font-size: 16px
+        padding: 5px 10px
+        display: inline-block
+        float: right
+
+        &:last-child
+          margin-left: 0
+        &:hover
+          color: $text-hover
+
+      @media(max-width: 575px)
+        display: none
+
+  .trigger
+    margin-right: 35px
+    float: right
+    position: relative
+    height: 25px
+    width: 30px
+    display: none
+    cursor: pointer
+
+    span
+      background: $black-bg
+      height: 2px
+      width: 30px
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+
+      &::before
+        content: ""
+        position: absolute
+        top: 10px
+        background: $black-bg
+        height: 100%
+        width: 100%
+
+      &::after
+        content: ""
+        position: absolute
+        top: -10px
+        background: $black-bg
+        height: 100%
+        width: 100%
+
+    @media(max-width: 575px)
+      display: block
+
+  .sidebar
+    background-color: #000
+    position: fixed
+    top: 0
+    right: -50%
+    width: 50%
+    height: 100vh
+    padding: 25px
+    transition: right 0.2s ease
+    text-align: center
+
+    a
+      text-decoration: none
+      color: $primary-color
+      display: block
+      margin-bottom: 20px
+      font-size: 16px
+
+      &:last-of-type
+        margin-bottom: 0
+
+  .menu-open
+    right: 0

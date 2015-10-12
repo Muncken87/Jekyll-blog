@@ -1,0 +1,26 @@
+<header class="site-header">
+
+  <div class="wrapper">
+    <nav class="site-nav">
+       <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+
+        <div class="navigation">
+          {% for item in site.data.settings.navigation %}
+            <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+          {% endfor %}
+        </div>
+
+        <div class="trigger">
+            <span></span>
+        </div>
+
+        <div class="sidebar ">
+          {% for item in site.data.settings.navigation %}
+            <a class="nav-link" href="{{ item.url }}">{{ item.name }}</a>
+          {% endfor %}
+
+        </div>
+    </nav>
+<div class="clearfix"></div>
+  </div>
+</header>

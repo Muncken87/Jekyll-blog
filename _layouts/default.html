@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="closed">
+{% include nav.html %}
+{% include jumbo.html %}
+<div class="page-content">
+  <div class="wrapper">
+      <div class="work-info">
+          <h2> WHAT I DO</h2>
+          <p>Here a showcases of selected works</p>
+      </div>
+    <div class="grid">
+      <div class="thumbnail-content">
+        {% for item in site.data.settings.work %}
+          <a class="sma-bilder"style="background-image:url({{ item.url }});">
+            <div class="thumb-overlay">
+              <strong>{{ item.name }}</strong>
+              <p>{{ item.name }}</p>
+            </div>
+          </a>
+        {% endfor %}
+
+      </div>
+</div> <!-- end grid -->
+<div class="clearfix"></div>
+<!--  {% for item in site.data.settings.menu %}
+<a href="{{ item.url }}">{{ item.name }}</a>
+{% endfor %} -->
+{% include footer.html %}
+</div>
+</div>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/functions.js"></script>
+<!-- <script src="js/paralax.js"></script> -->
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'spintail';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<script>
+(function(){
+  var body =  $('body');
+  var sidebar = $('.sidebar');
+
+  $('.trigger').bind('click', function(){
+    body.toggleClass('open');
+    sidebar.toggleClass('menu-open')
+    return false;
+  });
+})();
+</script>
+
+</body>
+
+</html>
