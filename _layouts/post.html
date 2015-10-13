@@ -1,5 +1,8 @@
+<!DOCTYPE html>
+<html>
 {% include head.html %}
-<!-- {% include nav.html %} -->
+<body class="closed">
+<!-- {% include nav.html %}
 
   <div class="wrapper">
     <!-- <div class="post-jumbo"style="background-image:url({{ page.thumbnail }});">
@@ -11,32 +14,12 @@
         <a href="/blog" class="meta back">Back to blog</a>
         <h1 class="post-title">{{ page.title }}</h1>
           {{ content }}
-      <!-- <div class="PageNavigation">
-          {% if page.previous.url %}
-              <a class="prev" href="{{page.previous.url}}">Older</a>
-              {% endif %}
-              {% if page.next.url %}
-              <a class="next" href="{{page.next.url}}">Newer</a>
-          {% endif %}
-      </div> -->
       <hr>
 {% include comments.html %}
-<!-- <section class="read-more">
-  <h2> Read More </h2>
-      {% for post in site.posts  %}
 
-          <ul>
-            <li>
-            <a class="read-more-header" href="{{ post.url }}">{{ post.title }}</a>
-            <a class="read-more-date">{{ post.date | date_to_string }}</a>
-            <div class="clearfix"></div>
-          </li>
-          </ul>
-
-      {% endfor %}
-</section> -->
 
     </article>
   </div>
-
   </div>
+</body>
+</html>
