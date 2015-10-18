@@ -15,8 +15,10 @@
         {% for item in site.data.settings.work %}
           <a class="sma-bilder"style="background-image:url({{ item.url }});">
             <div class="thumb-overlay">
-              <strong>{{ item.name }}</strong>
-              <p>{{ item.name }}</p>
+              <div class="project-data">
+                <h2 class="project-title">{{ item.name }}</h2>
+                 <p class="project-area">{{ item.project-area }}</p>
+             </div>
             </div>
           </a>
         {% endfor %}

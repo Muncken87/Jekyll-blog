@@ -1,28 +1,35 @@
-title: Artists Theme
+title: Spintail
 
 navigation:
-- {name: Contact, url: 'img/work/proj-9/tools.jpg'}
+- {name: Contact, url: '/'}
 - {name: About, url: '../about'}
 - {name: Blog, url: '../blog'}
-- {name: Portfolio, url: '/'}
+
+frontend:
+- {skill: 'HTML5,' }
+- {skill: 'CSS3,'}
+- {skill: 'SASS,' }
+- {skill: 'jQuery,' }
+- {skill: 'Wordpress,'}
+- {skill: 'Jekyll' }
+
+clients:
+- {name: Arcos Dorados arteBA CEOP Latam Converse Fierro Hotel Henry Saiz Lan Airlines Let’s Produce Los Arbolitos Trust Petrobras Sony Argentina. }
+
+
+
 
 
 
 
 work:
-- {name: Computers, url: 'img/work/proj-1/1.jpg',spec: 2014, author: Alexander Munck}
-- {name: Workspace, url: 'img/work/proj-2/web2.png'}
-- {name: Desktop, url: 'img/work/proj-3/02.png'}
-- {name: Vacation, url: 'img/work/proj-4/05.jpg'}
-- {name: Icon Mania, url: 'img/work/proj-5/icons.jpg'}
-- {name: Computers, url: 'img/work/proj-6/sit.jpg',spec: 2014, author: Alexander Munck}
-- {name: Workspace, url: 'img/work/proj-7/clothes.jpg'}
-- {name: Desktop, url: 'img/work/proj-8/books.jpg'}
-- {name: Vacation, url: 'img/work/proj-9/tools.jpg'}
-- {name: Icon Mania, url: 'img/work/proj-10/typewriter.jpg'}
-
-
-project:
-- {name: 500GB (5400-rpm) hard drive}
-- {name: TYPO International Design Talks}
-- {name: Dual-core Intel Core i5 processor (Turbo Boost up to 2.7GHz) with 3MB shared L3 cache}
+- {name: Computers, url: 'img/work/proj-1/1.jpg', project-area: 'Webdesign / UI'}
+- {name: Workspace, url: 'img/work/proj-2/web2.png', project-area: 'Development'}
+- {name: Desktop, url: 'img/work/proj-3/02.png', project-area: 'Free Coding'}
+- {name: Vacation, url: 'img/work/proj-4/05.jpg', project-area: 'Branding'}
+- {name: Icon Mania, url: 'img/work/proj-5/icons.jpg', project-area: 'Webdesign / UI'}
+- {name: Computers, url: 'img/work/proj-6/sit.jpg', project-area: 'Webdesign / UI'}
+- {name: Workspace, url: 'img/work/proj-7/clothes.jpg', project-area: 'Webdesign / UI'}
+- {name: Desktop, url: 'img/work/proj-8/books.jpg', project-area: 'Webdesign / UI'}
+- {name: Vacation, url: 'img/work/proj-9/tools.jpg', project-area: 'Webdesign / UI'}
+- {name: Icon Mania, url: 'img/work/proj-10/typewriter.jpg', project-area: 'Webdesign / UI'}

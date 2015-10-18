@@ -28,11 +28,11 @@
     width: 100%
     float: left
     position: relative
-
-    h2
-      font-size: 24px
-      margin-bottom: 1em
-      text-align: center
+    //
+    // h2
+    //   font-size: 24px
+    //   margin-bottom: 1em
+    //   text-align: center
 
 
     .sma-bilder
@@ -61,7 +61,7 @@
       //   border-right: 0px solid white
 
       @media(max-width: 1400px)
-        width: calc(20% - 20px)
+        width: calc(33.333% - 20px)
         min-height: 300px
 
       @media(max-width: 1024px)
@@ -80,30 +80,31 @@
         display: block
         width: 100%
         height: 100%
-        top: 0%
-        left: 0%
+        top: 0
+        left: 0
+        background: #fff
         overflow: hidden
-        transition: 0.2s ease
-
-        p
-          font-size: 14px
-          position: absolute
-          opacity: 0
-          top: 50%
-          left: 50%
-          transform: translate(-50% , -50%)
-
-        strong
-          color: $primary-color
-          background: $black-bg
-          padding: 15px 20px
-          position: absolute
-          bottom: -100%
-          width: 100%
-          display: block
-          transition: 0.2s ease-in
+        transition: 0.3s ease-in-out
+        opacity: 0
 
         &:hover
-          background-color: rgba(255, 69, 165, 0)
-          strong
-            bottom: 0px
+          opacity: 1
+
+        .project-data
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          display: block
+          transition: 0.3s ease-in-out
+          text-align: center
+          width: 100%
+
+          .project-title
+            color: $black-bg
+            margin-bottom: 0.75rem
+            font-size: 1.5rem
+
+          .project-area
+            color: $black-bg
+            font-size: 1rem
