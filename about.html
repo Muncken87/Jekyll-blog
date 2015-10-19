@@ -16,16 +16,17 @@ permalink: /about/
     <div class="half skills">
       <h2>Skills</h2>
         <p>Front-end </p>
+        <div class="span-block">
         {% for item in site.data.settings.frontend %}
         <span class="project-title">{{ item.skill }}</span>
         {% endfor %}
+      </div>
     </div>
 
-    <div class="half clients">
-      <h2>Clients</h2>
-      <!-- {% for item in site.data.settings.clients %}
-      <span class="project-title">{{ item.name }}</span>
-      {% endfor %} -->
+    <div class="half colophon">
+      <h2>Colophon</h2>
+      <p>
+        Alexander Munck af Rosenschöld is a developer specializing minimalism, front-end architecture, and modular design systems, with an emphasis on heuristics, user-centered design, and collaborative design processes. Based in Sweden SE.
     </div>
 
   </div> <!-- end about me -->

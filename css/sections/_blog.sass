@@ -1,7 +1,6 @@
 %post-header
   color: $text-color
   text-decoration: none
-  font-size: 36px
   display: block
   color: $background
   font-family: $font-bd
@@ -20,17 +19,8 @@
 
     .post-title
       +margin(20px 0px)
-      font:
-        size: 54px
-        family: $font-bd
       color: #000
       clear: both
-
-    p
-      font-size: 16px
-      line-height: 1.8em
-      margin-bottom: 1.6em
-      // font-family: $font-reg
 
     img
       height: auto
@@ -38,22 +28,15 @@
       max-height: 350px
 
     h1
-      font-size: 36px
       text-transform: uppercase
       margin-bottom: 0.3em
-      font-family: $font-bd
 
     h2
-      font-size: 30px
       margin-bottom: 0.3em
-      font-family: $font-bd
-      text-transform: none
 
     .meta
       color: #9C9A9A
-      font-size: 18px
       display: block
-      font-family: $font-reg
       float: left
 
       @media(max-width: 767px)
@@ -63,28 +46,23 @@
       float: right
       text-decoration: none
       background: #ccc
-      padding: 10px 20px
+      padding: 2px 10px
       color: white
       border-radius: 4px
 
       @media(max-width: 767px)
         float: none
 
-
-
-
   // Blog post mainview
 
 .squares
   cursor: pointer
-  font-family: $font-bd
   margin-bottom: 35px
 
   .thumbnail
     max-height: 400px
     height: 100%
     background-size: cover
-
 
   .post-header
     @extend %post-header
@@ -100,7 +78,7 @@
     display: inline-block
     text-transform: uppercase
     color: #D2D2D2
-    font-size: 20px
+    font-size: 2rem
     transition: color 0.2s ease
 
     &::before

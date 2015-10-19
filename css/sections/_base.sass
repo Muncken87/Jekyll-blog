@@ -12,6 +12,9 @@
   src: url(../fonts/BrandonText-Regular.otf)
   font-weight: normal
 
+html
+  font-size: 62.5%
+
 
 $font-reg:'BrandonText-Regular'
 $font-bd:'BrandonText-Bold'
@@ -24,12 +27,34 @@ $black-bg: #000
 body
   background: #fff
   font-family: $font-reg
-  font-size: 11px
-  margin: 0
+  font-size: 1.6em
+  line-height: 2.126em
   padding: 0
+  margin: 0
   font-weight: normal
   overflow-x: hidden
   transition: right 0.2s ease
+
+h1,h2,h3,h4,h5,h6
+  font-family: BrandonText-Bold
+
+p,br,span,ul,li,strong
+  font-family: BrandonText-Regular
+
+h1
+  font-size: 4.0rem
+  letter-spacing: -.1rem
+  line-height: 1.063em
+h2
+  font-size: 3rem
+  letter-spacing: -.1rem
+  line-height: 1.063em
+
+p
+  font-size: 1.8rem
+  letter-spacing: 0
+  line-height: 2.126em
+
 
 
 .closed
@@ -40,14 +65,6 @@ body
 
 .open
   right: 50%
-
-
-
-h1,h2,h3,h4,h5,h6
-  font-family: BrandonText-Bold
-
-p,br,span,ul,li,strong
-  font-family: BrandonText-Regular
 
 *
   box-sizing: border-box
