@@ -10,6 +10,5 @@ A little project i made with Jekyll to see what jekyll could do, and how simple 
 * Free to use
 * 
 ## Things to finish
-*Fix mobilenav for other pages than index
 * Add custom page for work
-* Add content to About page
+
