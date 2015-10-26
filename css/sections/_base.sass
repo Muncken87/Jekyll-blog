@@ -23,6 +23,7 @@ $text-color: #999
 $text-hover: #999
 $background: #333
 $black-bg: #000
+$link-color: #00CEFF
 
 body
   background: #fff
@@ -55,6 +56,22 @@ p
   letter-spacing: 0
   line-height: 2.126em
 
+ul
+  padding-left: 25px
+
+li
+  list-style-type: square
+  list-style-position: inside
+  font-size: 1.8rem
+  letter-spacing: 0
+  line-height: 2.126em
+
+a
+  color: #00CEFF
+  text-decoration: none
+
+  &:hover
+    color: darken($link-color, 5%)
 
 
 .closed

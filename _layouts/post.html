@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
-<body class="closed">
-
-<div class="wrapper">
-  <div class="wrapper">
+  {% include head.html %}
+  <body class="closed">
+    <div class="wrapper">
     <!-- <div class="post-jumbo"style="background-image:url({{ page.thumbnail }});">
-      <div class="color-overlay"></div>
+    <div class="color-overlay"></div>
     </div> -->
-  <div class="post">
-    <article class="post-content">
-      <p class="meta">{{ page.date | date: '%B %d, %Y' }}</p>
-        <a href="/blog" class="meta back">Back to blog</a>
-        <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post">
+        <article class="post-content">
+          <p class="meta">{{ page.date | date: '%B %d, %Y' }}</p>
+          <a href="/blog" class="meta back">Back to blog</a>
+          <div class="clearfix"></div>
+          <h1 class="post-title">{{ page.title }}</h1>
+            {% if page.thumbnail == blank or page.thumbnail == nil %}
+              <p> Nothing Here </p>
+                {% else %}
+                  <div class="post-jumbo"style="background-image:url({{ page.thumbnail }});"></div>
+            {% endif %}
           {{ content }}
-      <hr>
-{% include comments.html %}
-
-
-    </article>
-  </div>
-</div>
-  </div>
+          <hr>
+          {% if page.comments %}
+            {% include comments.html %}
+          {% endif %}
+        </article>
+      </div>
+    </div>
 </body>
 </html>

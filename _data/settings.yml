@@ -16,12 +16,6 @@ frontend:
 clients:
 - {name: Arcos Dorados arteBA CEOP Latam Converse Fierro Hotel Henry Saiz Lan Airlines Let’s Produce Los Arbolitos Trust Petrobras Sony Argentina. }
 
-
-
-
-
-
-
 work:
 - {name: Computers, url: 'img/work/proj-1/1.jpg', project-area: 'Webdesign / UI'}
 - {name: Workspace, url: 'img/work/proj-2/web2.png', project-area: 'Development'}

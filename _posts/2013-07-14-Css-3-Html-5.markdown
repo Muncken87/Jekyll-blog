@@ -3,7 +3,7 @@ layout: post
 title:  "Css 3"
 date:   2015-01-27 19:50:11
 permalink: /Css-3-Html-5
-thumbnail: ../img/home.jpg
+thumbnail: ../img/food.jpg
 comments: true
 info: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae bibendum nisi. Suspendisse tempus arcu vitae pretium convallis. Nullam urna enim, euismod nec ornare ut, iaculis non lacus. Cras sed dui feugiat, aliquam ligula cursus
 ---

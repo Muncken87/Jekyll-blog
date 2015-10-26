@@ -12,16 +12,12 @@ title: Blog
   <!-- {{ content }} -->
   <!-- <h1 class="post-title"> Blog </h1> -->
     {% for post in site.posts  %}
-       <!-- <div class="post-jumbo"style="background-image:url({{ post.thumbnail }});"></div> -->
       <div class="squares">
         <h2>
           <a class="post-header" href="{{ post.url }}">{{ post.title }}  </a>
           <span class="post-date">{{ post.date | date_to_string }}</span>
         </h2>
             <p>{{ post.info }}</p>
-          <!-- <div class="thumbnail" style="background-image:url('{{ post.thumbnail }}')">  </div> -->
-
-        <!-- {{ post.excerpt }} -->
     </div>
     {% endfor %}
 
